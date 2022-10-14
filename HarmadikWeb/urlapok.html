@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script>
+        function mutato()
+        {
+            var hossz = document.getElementById("Text1").value.length;
+            document.getElementById("hh").innerHTML = hossz;
+        }
+    </script>
+    <style>
+        div {display:block; background-color:aqua;width:25%;}
+    </style>
+</head>
+
+<body>
+    <h1>Bevitel és feldolgozás GET és POST</h1>
+    <p>átadás az URL sorban (GET)</p>
+    <form method="get" action="munkas_1.aspx">
+        <div>
+            <table>
+            <tr><td>Név:</td><td><input id="Text1" type="text" name="nn" onkeyup="mutato()"/></td><td>(hossza: <span id="hh">.</span> )</td></tr>
+            <tr><td>Jelszó:</td><td><input id="Password1" type="password" name="pp" /></td><td>&nbsp;</td></tr>
+            <tr><td>&copy;</td><td><input id="Submit1" type="submit" value="Elküld" /></td><td><input id="Reset1" type="reset" value="Alaphelyzet" /></td></tr>
+            </table>
+
+        </div>
+    </form>
+    <br />
+    <p>átadás a háttérben (POST)</p>
+    <form method="post" action="munkas_2.aspx">
+        <div>
+            Becenév: <input id="Text1" type="text" name="bece" />
+            <input id="Submit1" type="submit" value="Nézzük!" />
+        </div>
+    </form>
+    <br />
+    <a href="Index.html">Vissza a kezdőlapra</a>
+</body>
+</html>

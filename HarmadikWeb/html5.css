@@ -1,0 +1,10 @@
+﻿body {
+}
+
+header, footer, nav, section, article{display:block;}
+
+header {width:100%;background-color:aqua;}
+nav {width:25%;background-color:aquamarine;float:left;}
+section {width:70%;background-color:aliceblue;float:right;}
+article {width:90%;background-color:pink;margin:auto;font-size:0.6em;}
+footer {width:100%;background-color:azure;clear:both;}
